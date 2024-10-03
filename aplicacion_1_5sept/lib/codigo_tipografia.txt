@@ -1,0 +1,104 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Diagramación"),
+        ),
+        body: ListView(
+          padding: const EdgeInsets.all(16.0),
+          children: const [
+            //Título H1
+            Text(
+              "Titulo principal H1", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 96, //Tamaño fuente
+                fontWeight: FontWeight.w300, //Peso (ligero en este caso)
+                letterSpacing: -1.5,
+              ),
+            ),
+
+            //Título H2
+            Text(
+              "Titulo secundario H2", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 60, //Tamaño fuente
+                fontWeight: FontWeight.w300, //Peso (ligero en este caso)
+                letterSpacing: -0.5,
+              ),
+            ),
+
+            //Título H3
+            Text(
+              "Titulo terciario H3", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 48, //Tamaño fuente
+                fontWeight: FontWeight.w400, //Peso (normal en este caso)
+                letterSpacing: 0,
+              ),
+            ),
+
+            //Título H4
+            Text(
+              "Titulo secundario H4", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 34, //Tamaño fuente
+                fontWeight: FontWeight.w400, //Peso (normal en este caso)
+                letterSpacing: 0.25,
+              ),
+            ),
+
+            //Título H5
+            Text(
+              "Titulo secundario H5", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 24, //Tamaño fuente
+                fontWeight: FontWeight.w400, //Peso (normal en este caso)
+                letterSpacing: 0,
+              ),
+            ),
+
+            //Título H6
+            Text(
+              "Titulo secundario H6", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 20, //Tamaño fuente
+                fontWeight: FontWeight.w600, //Peso (normal en este caso)
+                letterSpacing: 0.15,
+              ),
+            ),
+
+            //Subtítulo 1
+            Text(
+              "Subtítulo", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 16, //Tamaño fuente
+                fontWeight: FontWeight.w400, //Peso (normal en este caso)
+                letterSpacing: 0.15,
+              ),
+            ),
+
+            //Título caption
+            Text(
+              "Etiqueta Caption", //Texto a mostrar
+              style: TextStyle(
+                fontSize: 12, //Tamaño fuente
+                fontWeight: FontWeight.w400, //Peso (normal en este caso)
+                letterSpacing: 1.5,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
